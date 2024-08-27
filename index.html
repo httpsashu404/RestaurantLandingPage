@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Name</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: rgba(0,0,0,.2);
+    }
+    .title{
+      text-shadow: 1px 1px 0px  goldenrod;
+    }
+    .hero {
+      background: url('https://th.bing.com/th/id/R.c7a06915c052a4919ae0e1f247279fdd?rik=vLgpGSg7hSWVuA&riu=http%3a%2f%2fwww.trbimg.com%2fimg-586d198c%2fturbine%2fph-mg-ho-royal-taj-s-excellent-fare-shines-in-a-beautiful-space-20170103&ehk=L9rLFfeBAS2kGX0LM0lLxM74boFAimHcbmO4%2f0hCBag%3d&risl=&pid=ImgRaw&r=0') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 0px black;
+    }
+    .hero p{
+      color: goldenrod;
+      margin: auto;
+      width:fit-content;
+      padding: 5px 25px;
+      border-radius: 50px;
+      text-shadow: 1px 1px 0px black;
+      background-color: rgba(0,0,0,.5);
+    }
+    .nav-link:hover{
+      border-bottom: 1px solid orange;
+    }
+    .menu-item {
+      margin-bottom: 20px;
+    }
+    .tab{
+      margin: auto;
+      width: max-content;
+      border-bottom: 3px solid black;
+    }
+    .card{
+      color: white;
+      transition: .5s;
+      border-radius: 5px;
+      background-color:darkslategrey ;
+    } 
+    .card img{
+      width: 100%;
+      position: relative;
+    }   
+    .card:hover{
+      border: 1px solid black;
+      box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    }
+    .image img{
+      width: 349x;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><h3 class="title">Taj Restaurant</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container homePage m-auto">
+      <h1>Welcome to Taj Restaurant</h1>
+      <p>Delicious food, great atmosphere</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center tab mb-4">Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="image">
+              <img class="card-img-top" src="https://wp.scoopwhoop.com/wp-content/uploads/2019/12/5dce4c3250758d2f6fb3e6c9_4c000d72-16f0-451f-b392-3661772cb93d.jpg" alt="Dish 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Samosa</h5>
+              <p class="card-text">$12.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="image">
+              <img class="card-img-top" src="https://wp.scoopwhoop.com/wp-content/uploads/2019/12/5dce4c3250758d2f6fb3e6c9_a56dd247-6f5b-4224-9361-5747254c7272.jpg" alt="Dish 2">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Biryani</h5>
+              <p class="card-text">$15.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="image">
+              <img class="card-img-top" src="https://wp.scoopwhoop.com/wp-content/uploads/2019/12/5dce4c3250758d2f6fb3e6c9_5940b549-daed-4998-9d08-3c3219a6c2d7.jpg" alt="Dish 3">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Idli</h5>
+              <p class="card-text">$9.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="image">
+              <img class="card-img-top" src="https://wp.scoopwhoop.com/wp-content/uploads/2019/12/5dce4c3250758d2f6fb3e6c9_f473ba42-9f42-4fb8-a151-45d7cbe2ff77.jpg" alt="Dish 4">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Gulab Jamun</h5>
+              <p class="card-text">$12.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="image">
+              <img class="card-img-top" src="https://wp.scoopwhoop.com/wp-content/uploads/2019/12/5dce4c3250758d2f6fb3e6c9_72582cfb-7c7c-4f1f-9be2-7f92ce3022ee.jpg" alt="Dish 5">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Jalebi</h5>
+              <p class="card-text">$15.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="image">
+              <img class="card-img-top" src="https://wp.scoopwhoop.com/wp-content/uploads/2019/12/5dce4c3250758d2f6fb3e6c9_f79d0e6c-a677-4981-bede-c0bc7d196307.jpg" alt="Dish 6">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tandoori Chicken</h5>
+              <p class="card-text">$9.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-info">
+    <div class="container">
+      <h2 class="text-center mb-4 tab">About Us</h2>
+      <p class="text-center">We are a family-owned restaurant committed to serving the freshest and most delicious meals. Our chefs use only the highest quality ingredients to ensure every dish is perfect.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 tab">Contact Us</h2>
+      <form onsubmit="done()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name"><b>Name : </b></label>
+            <input type="text" class="form-control" id="name" placeholder="Your fullName" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email"><b>Email : </b></label>
+            <input type="email" class="form-control" id="email" placeholder="Your emailAddress" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message"><b>Message : </b></label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Type your message......" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-center">
+    <p>&copy; 2024 Taj Restaurant. All Rights Reserved.</p>
+    <p>Sasaram, Rohtas, Bihar, 82115</p>
+    <p>Email : info@tajrestaurant.com | Phone : +917763992074</p>
+  </footer>
+
+  <script>
+    function done(){
+      alert('Message send successfully')
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
