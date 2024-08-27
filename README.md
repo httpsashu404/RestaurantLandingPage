@@ -1,5 +1,6 @@
 # RestaurantLandingPage
-I've complete task-1 landing page of restaurant during Orison technologies Pvt. Ltd. <br/>
+I've completed task-1,
+landing page of restaurant during Orison technologies Pvt. Ltd. <br/>
 **Use :** HTML, CSS, Bootstap, js <br/>
 **Demo :** https://httpsashu404.github.io/RestaurantLandingPage/ <br/><br/>
 
